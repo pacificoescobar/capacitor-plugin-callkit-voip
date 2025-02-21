@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    >
+    package="sa.ihorizon.callkitvoip">
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -46,10 +45,9 @@
             android:stopWithTask="true">
 
         </service>
-        <service
-            android:name="sa.ihorizon.public.callkitvoip.MyFirebaseMessagingService">
+        <service android:name="sa.ihorizon.callkitvoip.MyFirebaseMessagingService" android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
     </application>

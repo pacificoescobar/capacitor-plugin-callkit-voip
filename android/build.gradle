@@ -55,7 +55,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     implementation 'com.google.android.gms:play-services-tasks:17.2.1'
     implementation 'com.google.firebase:firebase-messaging:20.1.7'
-    implementation project(path: ':capacitor-push-notifications')
+    // implementation project(path: ':capacitor-push-notifications')
     testImplementation "junit:junit:$junitVersion"
     implementation 'com.google.firebase:firebase-messaging:21.1.0'
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"

@@ -9,6 +9,8 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://quickblox.bintray.com/maven' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.7.2'
@@ -61,7 +63,7 @@ dependencies {
     implementation 'com.twilio:video-android:5.8.0'
     implementation 'com.google.android.material:material:1.5.0-alpha02'
     implementation 'com.getkeepsafe.relinker:relinker:1.4.4'
-    implementation 'com.androidnetworking:fast-android-networking:1.0.2'
     implementation 'com.twilio:audioswitch:1.1.6'
-    implementation 'org.webrtc:google-webrtc:1.0.32006'
+    implementation 'com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking:1.0.2'
+    implementation 'com.quickblox:google-webrtc:1.0.32006'
 }
